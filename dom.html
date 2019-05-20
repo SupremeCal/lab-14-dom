@@ -1,0 +1,40 @@
+<html>
+<body>
+<title id="headline1">Hello!</title>
+
+<h1 id="greeting">Hello</h1>
+
+<ul>
+<li>First</li>
+<li>second</li>
+</ul>
+
+<div id="div1">
+
+</div>
+<script>
+
+var title = document.getElementById("headline1");
+title.id; //=> "headline1"
+title.innerText = "Hello, Javascript!";
+
+var hello1 = document.getElementById("greeting");
+hello1.id; //=> "headline1"
+hello1.innerText = "Hello, Javascript!";
+
+
+var listItems =
+document.getElementsByTagName("li");
+// listItems is now an
+// ARRAY of Element Objects
+listItems[0].innerText == "First";
+
+
+var quote = document.createElement("p");
+var yeah = document.createTextNode("this was made with javascript");
+quote.appendChild(yeah);
+var element = document.getElementById("div1");
+element.appendChild(yeah);
+</script>
+</body>
+</html>
